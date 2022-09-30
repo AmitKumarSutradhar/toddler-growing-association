@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Calculation from '../Calculation/Calculation';
 import Activities from '../Activities/Activities';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBaby } from '@fortawesome/free-solid-svg-icons'
 import './Main.css';
 
 
@@ -29,7 +31,11 @@ const Main = () => {
     return (
         <div className='main-container'>
             <div className="activities-container">
-                <h1>Toddler Growing Association</h1>
+                <div className="site-header">
+                    <FontAwesomeIcon icon={faBaby} size="6x"></FontAwesomeIcon>
+                    <h1>Toddler Growing Association</h1>
+                </div>
+
                 <div className="activities">
                     {
                         activities.map(activity => <Activities

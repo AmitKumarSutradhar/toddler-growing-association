@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
-import './Calculation.css'
+import './Calculation.css';
+
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
+// toast.configure()
 
 const Calculation = ({ excercise }) => {
 
@@ -10,11 +16,20 @@ const Calculation = ({ excercise }) => {
         excerciseTime = excerciseTime + (excercise[0].time);
     }
 
+    const notify = () => {
+
+        // Calling toast method by passing string
+        toast('Hello Geeks')
+    }
+
 
     return (
         <div className="right-bar">
             <div className="profile">
-                <img src="../../../public/profile.png" alt="" />
+                <div className="profile-image">
+                    <img src='/profile.png' alt='' />
+                </div>
+
                 <div className="profile-info">
                     <h3>Bertha Hessel</h3>
                     <h5>29857 McLaughlin Union Apt. 639</h5>
@@ -53,6 +68,9 @@ const Calculation = ({ excercise }) => {
             <div className="break-time">
                 <div><p>Break time: </p></div>
                 <div><p>{breakTime}  seconds</p></div>
+            </div>
+            <div className="">
+                <button className='activity-completed' onClick={notify}>Activity Completed</button>
             </div>
         </div>
     );

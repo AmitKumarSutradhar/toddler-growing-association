@@ -1,6 +1,18 @@
+.site-header {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+h1 {
+    color: #F57C02;
+    margin-left: 10px;
+}
+
 .main-container {
     display: flex;
 }
+
 
 .activities-container {
     background-color: #F6F6E6;
@@ -19,4 +31,25 @@
 
 .activity-calculation-container {
     padding-left: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .main-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .activities-container {
+        width: 100%;
+        padding: 0px;
+
+    }
+
+    .activities {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
 }

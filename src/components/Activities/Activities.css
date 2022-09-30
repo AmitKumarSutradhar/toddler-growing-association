@@ -10,6 +10,10 @@ img {
     position: relative;
 }
 
+.activity-image {
+    width: 280px;
+}
+
 button.btn-activity {
     background-color: #F57C02;
     color: #fff;
@@ -26,4 +30,10 @@ button.btn-activity {
 
 button:hover.btn-activity {
     background-color: #f5dd02d4;
+}
+
+@media only screen and (max-width: 768px) {
+    /* .activity-card {
+        width: 200px;
+    } */
 }

@@ -1,3 +1,13 @@
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-image img {
+    width: 70px;
+    margin-right: 10px;
+}
+
 .body-info {
     background-color: #F6F6E6;
     padding: 12px;
@@ -25,8 +35,16 @@ button {
     background-color: #F6F6E6;
     padding: 12px;
     border-radius: 7px;
-}
-
-.excercise-time {
     margin-bottom: 16px;
 }
+
+button.activity-completed {
+    background-color: #F57C02;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 768px) {}

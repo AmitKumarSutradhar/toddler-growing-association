@@ -9,14 +9,17 @@ const Activities = ({ activity, handleAddToExcercise }) => {
     return (
         <div className="activity-card">
             <div className='card-info'>
-                <img src={img} alt=""></img>
+                <div className="activity-image">
+                    <img src={img} alt=""></img>
+                </div>
+
                 <h2>{name}</h2>
                 <p>{desc}</p>
                 <p>For Age : <b>{age}</b></p>
                 <p>Time Spet : <b>{time}</b></p>
             </div>
             <button onClick={() => handleAddToExcercise(activity)} className='btn-activity'>
-                <p className='btn-text'>Add to Cart</p>
+                <p className='btn-text'>Add to List</p>
             </button>
 
         </div>
