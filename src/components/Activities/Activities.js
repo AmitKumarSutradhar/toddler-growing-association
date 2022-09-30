@@ -15,11 +15,9 @@ const Activities = ({ activity, handleAddToExcercise }) => {
                 <p>For Age : <b>{age}</b></p>
                 <p>Time Spet : <b>{time}</b></p>
             </div>
-            <div className="btn">
-                <button onClick={() => handleAddToExcercise(activity)} className='btn-cart'>
-                    <p className='btn-text'>Add to Cart</p>
-                </button>
-            </div>
+            <button onClick={() => handleAddToExcercise(activity)} className='btn-activity'>
+                <p className='btn-text'>Add to Cart</p>
+            </button>
 
         </div>
     );

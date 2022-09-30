@@ -29,6 +29,7 @@ const Main = () => {
     return (
         <div className='main-container'>
             <div className="activities-container">
+                <h1>Toddler Growing Association</h1>
                 <div className="activities">
                     {
                         activities.map(activity => <Activities
