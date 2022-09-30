@@ -2,49 +2,49 @@
     {
         "img": "https://images.pexels.com/photos/296301/pexels-photo-296301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "name": "Children's Team Building on Green Grassland",
-        "desc": "Addidas",
-        "age": "20-25",
-        "time": 30,
+        "desc": "Kids between the age of 7 and 13 are starting to discover that they have a real curiosity about the world, with an understand that they have some independence as well. In order to fuse together these two notions of curiosity and independence, kids need to learn skills.",
+        "age": "7-13",
+        "time": 800,
         "id": 1
     },
     {
         "img": "https://images.pexels.com/photos/296302/pexels-photo-296302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "name": "Toddler Playing Soccer",
-        "desc": "Addidas",
-        "age": "20-25",
-        "time": 30,
+        "name": "Toddler Playing Soccer in open field",
+        "desc": "Soccer is one of the best 'organized sports' for 2 year olds because it can be played with the basic motor skills of walking, running and kicking. Those primary activities become 'soccer' simply by including a soccer ball in the activities.",
+        "age": "2",
+        "time": 2500,
         "id": 2
     },
     {
         "img": "https://images.pexels.com/photos/61129/pexels-photo-61129.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "name": "Swimming during Daytime",
-        "desc": "Addidas",
-        "age": "20-25",
-        "time": 30,
+        "desc": "Studies show that the best time for a child to start learning swim basics is between the ages of 1 and 4. However, infants aged 6 months to 3 years can participate in Parent and Child Lessons at the Y to start enjoying and getting acclimated to the water.",
+        "age": "1-13",
+        "time": 7000,
         "id": 3
     },
     {
         "img": "https://images.pexels.com/photos/8471859/pexels-photo-8471859.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "name": "Experiment on the lab",
-        "desc": "Addidas",
-        "age": "20-25",
-        "time": 30,
+        "desc": "Eye-tracking has been used for many years to understand attention and perception in infancy and childhood. The eye-tracker allows us to see exactly where the child is attending on a screen or in a live scene.",
+        "age": "3-7",
+        "time": 5000,
         "id": 4
     },
     {
         "img": "https://images.pexels.com/photos/4119962/pexels-photo-4119962.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "name": " Playing Chinese Garter",
-        "desc": "Addidas",
-        "age": "20-25",
-        "time": 30,
+        "desc": " Players are divided into two or more teams. During the game, two members of the “it” team shall serve as “game posts” as they stand opposite each other and hold each end of the garter.A narrow strip of rubber, usually a meter long, used in various jumping games. ",
+        "age": "3-8",
+        "time": 1000,
         "id": 5
     },
     {
         "img": "https://images.pexels.com/photos/296308/pexels-photo-296308.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "name": "Playing on Inflatable Castle",
-        "desc": "Addidas",
-        "age": "20-25",
-        "time": 30,
+        "name": "Inflatable castle playing",
+        "desc": "Inflatable castles , bouncing castles, bouncy houses, bounce houses, jumping castles, jumpers, bouncy castles, moon bounces, or moonwalks) are temporary inflatable structures and buildings and similar items that are rented for functions, school and church festivals and village fetes and used for recreational purposes, particularly for children.",
+        "age": "2-9",
+        "time": 500,
         "id": 6
     }
 ]

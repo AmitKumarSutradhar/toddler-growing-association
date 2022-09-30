@@ -32,7 +32,7 @@ const Calculation = ({ excercise }) => {
 
                 <div className="profile-info">
                     <h3>Bertha Hessel</h3>
-                    <h5>29857 McLaughlin Union Apt. 639</h5>
+                    <h5>Stockton, California</h5>
                 </div>
             </div>
             <div className="body-info">

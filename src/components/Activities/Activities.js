@@ -16,7 +16,7 @@ const Activities = ({ activity, handleAddToExcercise }) => {
                 <h2>{name}</h2>
                 <p>{desc}</p>
                 <p>For Age : <b>{age}</b></p>
-                <p>Time Spet : <b>{time}</b></p>
+                <p>Time Spet : <b>{time}</b> Seconds</p>
             </div>
             <button onClick={() => handleAddToExcercise(activity)} className='btn-activity'>
                 <p className='btn-text'>Add to List</p>
