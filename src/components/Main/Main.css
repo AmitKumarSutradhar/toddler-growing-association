@@ -1,10 +1,18 @@
 .main-container {
     display: flex;
-    background-color: #bdd1f0;
 }
 
 .activities-container {
+    background-color: #F6F6E6;
+    width: 70%;
+    padding: 50px;
+
+}
+
+.activities {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 25px;
+    margin: 50px;
+
 }

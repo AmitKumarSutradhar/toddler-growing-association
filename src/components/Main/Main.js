@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Calculation from '../Calculation/Calculation';
 import Activities from '../Activities/Activities';
 import './Main.css';
 
@@ -6,6 +7,8 @@ import './Main.css';
 const Main = () => {
 
     const [activities, setActivities] = useState([]);
+    const [excercise, setEcercise] = useState([]);
+
 
     useEffect(() => {
         fetch('activity.json')
@@ -13,18 +16,31 @@ const Main = () => {
             .then(data => setActivities(data))
     }, []);
 
+
+
+    const handleAddToExcercise = (activity) => {
+        console.log(activity);
+        const newExcercise = [...excercise, activity];
+        setEcercise(newExcercise);
+    }
+
+
+
     return (
         <div className='main-container'>
             <div className="activities-container">
-                {
-                    activities.map(activity => <Activities
-                        key={activity.id}
-                        activity={activity}
-                    ></Activities>)
-                }
+                <div className="activities">
+                    {
+                        activities.map(activity => <Activities
+                            key={activity.id}
+                            activity={activity}
+                            handleAddToExcercise={handleAddToExcercise}
+                        ></Activities>)
+                    }
+                </div>
             </div>
             <div className="activity-calculation-container">
-                <h2>Hello from calculation</h2>
+                <Calculation excercise={excercise}></Calculation>
             </div>
         </div>
     );
