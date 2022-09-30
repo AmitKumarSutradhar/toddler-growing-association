@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Calculation.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -6,12 +6,28 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Calculation = ({ excercise }) => {
 
-    const [breakTime, setBreak] = useState(0);
+    const [breakTime, setBreak] = useState([0]);
 
     let excerciseTime = 0;
     for (const activityTime of excercise) {
         excerciseTime = excerciseTime + (excercise[0].time);
     }
+
+    useEffect(() => {
+        console.log(breakTime);
+        localStorage.setItem('Break_Time', JSON.stringify(breakTime));
+    }, [breakTime])
+
+    useEffect(() => {
+        const data = window.localStorage.getItem('MY_APP_STATE');
+        if (data !== null) handleSetBreak(JSON.parse(data));
+    }, []);
+
+    const handleSetBreak = (value) => {
+        const newBreak = [value];
+        setBreak(newBreak);
+    }
+
 
     const notify = () => toast("Thank you for completing your activity!");
 
@@ -45,11 +61,11 @@ const Calculation = ({ excercise }) => {
             <div className="break">
                 <p>Add a break</p>
                 <div className="select-break">
-                    <button onClick={() => setBreak(10)}><span>10</span>s</button>
-                    <button onClick={() => setBreak(20)}><span>20</span>s</button>
-                    <button onClick={() => setBreak(30)}><span>30</span>s</button>
-                    <button onClick={() => setBreak(40)}><span>40</span>s</button>
-                    <button onClick={() => setBreak(50)}><span>50</span>s</button>
+                    <button onClick={() => handleSetBreak(10)}><span>10</span>s</button>
+                    <button onClick={() => handleSetBreak(20)}><span>20</span>s</button>
+                    <button onClick={() => handleSetBreak(30)}><span>30</span>s</button>
+                    <button onClick={() => handleSetBreak(40)}><span>40</span>s</button>
+                    <button onClick={() => handleSetBreak(50)}><span>50</span>s</button>
                 </div>
             </div>
 
