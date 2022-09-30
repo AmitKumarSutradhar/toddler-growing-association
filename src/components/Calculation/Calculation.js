@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import './Calculation.css';
-
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-
-// toast.configure()
 
 const Calculation = ({ excercise }) => {
 
@@ -16,11 +13,7 @@ const Calculation = ({ excercise }) => {
         excerciseTime = excerciseTime + (excercise[0].time);
     }
 
-    const notify = () => {
-
-        // Calling toast method by passing string
-        toast('Hello Geeks')
-    }
+    const notify = () => toast("Thank you for completing your activity!");
 
 
     return (
@@ -70,7 +63,17 @@ const Calculation = ({ excercise }) => {
                 <div><p>{breakTime}  seconds</p></div>
             </div>
             <div className="">
-                <button className='activity-completed' onClick={notify}>Activity Completed</button>
+                <button onClick={notify} className='activity-completed' >Activity Completed</button>
+                <ToastContainer
+                    position="bottom-right"
+                    autoClose={5000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover />
             </div>
         </div>
     );
