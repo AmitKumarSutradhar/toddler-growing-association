@@ -1,13 +1,13 @@
 .body-info {
     background-color: #F6F6E6;
-    padding: 8px;
+    padding: 12px;
     display: flex;
     justify-content: space-between;
 }
 
 .select-break {
     background-color: #F6F6E6;
-    padding: 8px;
+    padding: 12px;
 }
 
 button {
@@ -16,4 +16,17 @@ button {
     border: none;
     border-radius: 50px;
     padding: 12px;
+}
+
+.excercise-time,
+.break-time {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F6F6E6;
+    padding: 12px;
+    border-radius: 7px;
+}
+
+.excercise-time {
+    margin-bottom: 16px;
 }

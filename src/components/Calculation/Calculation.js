@@ -45,9 +45,15 @@ const Calculation = ({ excercise }) => {
                 </div>
             </div>
 
-            <p>Excercise Details</p>
-            <p>Exercise time: {parseInt(excerciseTime)}</p>
-            <p>Break time: {breakTime}</p>
+            <p>Activity Details</p>
+            <div className="excercise-time">
+                <div><p>Activity time: </p></div>
+                <div><p>{parseInt(excerciseTime)}  seconds</p></div>
+            </div>
+            <div className="break-time">
+                <div><p>Break time: </p></div>
+                <div><p>{breakTime}  seconds</p></div>
+            </div>
         </div>
     );
 };
