@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Calculation.css'
 
 const Calculation = ({ excercise }) => {
 
@@ -11,8 +12,28 @@ const Calculation = ({ excercise }) => {
 
 
     return (
-        <div>
-            <h4>Profile</h4>
+        <div className="right-bar">
+            <div className="profile">
+                <img src="../../../public/profile.png" alt="" />
+                <div className="profile-info">
+                    <h3>Bertha Hessel</h3>
+                    <h5>29857 McLaughlin Union Apt. 639</h5>
+                </div>
+            </div>
+            <div className="body-info">
+                <div className="weight">
+                    <p><b>75</b></p>
+                    <p>Weight</p>
+                </div>
+                <div className="height">
+                    <p><b>6.5</b></p>
+                    <p>Height</p>
+                </div>
+                <div className="age">
+                    <p><b>25</b>years</p>
+                    <p>Age</p>
+                </div>
+            </div>
             <div className="break">
                 <p>Add a break</p>
                 <div className="select-break">
